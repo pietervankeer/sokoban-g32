@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="79.0" />
+      <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="121.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="130.0" minWidth="10.0" prefWidth="130.0" />
+      <ColumnConstraints maxWidth="130.0" minWidth="10.0" prefWidth="130.0" />
+      <ColumnConstraints maxWidth="130.0" minWidth="10.0" prefWidth="130.0" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="taalSelectorLabel" prefHeight="60.0" prefWidth="353.0" text="- Kies uw taal - Choisissez votre langue - - Choose your language - " textAlignment="CENTER" wrapText="true" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNederlands" mnemonicParsing="false" onMouseClicked="#btnNederlandsAfhandeling" prefWidth="100.0" text="Nederlands" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button fx:id="btnFrans" mnemonicParsing="false" onMouseClicked="#btnFransAfhandeling" prefWidth="100.0" text="Français" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button fx:id="btnEngels" mnemonicParsing="false" onMouseClicked="#btnEngelsAfhandeling" prefWidth="100.0" text="English" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+   </children>
+</fx:root>
